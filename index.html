@@ -128,19 +128,19 @@
    скрывает секцию.
    ============================================================ */
 const CONFIG = {
-  name: "yourname",                 // заголовок, вкладка, prompt в терминале
-  handle: "yourname@site",          // для команды whoami
+  name: "Rust Cohle",                 // заголовок, вкладка, prompt в терминале
+  handle: "rusttcohlee@site",          // для команды whoami
   accent: "#7fd6c2",                // главный цвет, любой hex
   defaultLang: "ru",                // "ru" или "en"
   timezone: "Asia/Yerevan",         // IANA-пояс для часов
-  birthdate: "1997-01-01T00:00:00", // для счётчика "живу уже"; пусто = без счётчика
-  awakeHours: { from: 9, to: 1 },   // когда ты "не спишь" по часам выше (в 24ч формате)
+  birthdate: "2008-11-01T00:00:00", // для счётчика "живу уже"; пусто = без счётчика
+  awakeHours: { from: 0, to: 24 },   // когда ты "не спишь" по часам выше (в 24ч формате)
 
   tagline: {
-    ru: "я yourname, делаю то-то и то-то",
-    en: "i'm yourname, i make this and that"
+    ru: "я Rust, инженер по кибербезопасности",
+    en: "i'm Rust, cybersecurity engineer"
   },
-  tags: ["tag one", "tag two", "tag three", { text: "главный тег", hot: true }],
+  tags: ["Linux", "debian", "OSINT", { text: "Opsex", hot: true }],
 
   /* Вставь свой ASCII-арт между обратными кавычками. Делай свой или бери
      с разрешения автора и подписывай его в artCredit. Пусто = блок скрыт. */
@@ -149,11 +149,15 @@ const CONFIG = {
    │   вставь сюда арт    │
    └──────────────────────┘
 `,
-  artCredit: "",                    // например "art: nickname"
+  artCredit: "      .-~~~~~~-.
+    .'   .--.   '.
+   |    ( () )    |=====
+    '.   '--'   .'
+      '-.____.-'",                  // например "art: Rust"
 
   about: [
-    { ru: "Первый абзац о том, чем ты занимаешься.", en: "First paragraph about what you do." },
-    { ru: "Второй абзац: что делаешь прямо сейчас.", en: "Second paragraph: what you're up to right now." }
+    { ru: "OSINT расследование.", en: "OSINT investigation." },
+    { ru: "сижу.", en: "I'm sitting." }
   ],
 
   /* Пары "ключ → значение" для блока /about. Значение можно писать со ссылкой в виде { text, url } */
